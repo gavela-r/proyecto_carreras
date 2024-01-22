@@ -1,0 +1,138 @@
+
+body{
+    margin: 0 auto;
+    background-color: #CEBEB2;
+    position: relative; 
+}
+header {
+    background-image: url(../img/lesiones-trail-running.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;   
+    height: 300px;
+    
+}
+header h1 {
+    font-family: "Boogaloo", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 50px;
+    margin: 0;
+    position: absolute;
+    left: 10%;
+    top: 5%;
+}
+
+header h3 {
+    font-family: "Indie Flower", cursive;
+    font-weight: 400;
+    font-style: normal;
+    color: #61FF00;
+    transform: rotate(-15deg);
+    position: absolute;
+    top: 55px;
+    left: 12%;
+}
+
+header img {
+    width: 100px;
+    filter: brightness(1.1);
+    mix-blend-mode: multiply;
+    position: relative;
+    left: 80px;
+    top: 10px;
+}
+.principal{
+    background-image: url(../img/trailrunning.jpg);
+    background-size: cover;
+    height: 600px;
+    width: 100%;
+    position:absolute;
+    top: 330px;
+    
+    
+    
+}
+
+
+form {
+    background-color: rgba(97, 255, 0, 0.5);
+    width: 500px; /* Ajustar el ancho */
+    height: 500px; /* Ajustar la altura */
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    left:1600px; /* Ajustar la posición horizontal */
+    top: 30px;
+    transform: translateX(-50%); /* Centrar horizontalmente */
+    border-radius: 30px; /* Ajustar el radio del borde */
+}
+h1{
+    font-family: "Boogaloo", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    position: absolute;
+    top: 10px;
+    left: 150px;
+}
+.correo {
+    font-family: "Boogaloo", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    position: relative;
+    top: 120px;
+    right: 20px;
+
+}
+.contraseña{
+    font-family: "Boogaloo", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    position: relative;
+    top: 220px;
+    right: 70px;
+}
+#texto{
+    width: 400px;
+    height: 30px;
+    position:absolute;
+    top: 150px;
+    right: 50px;
+    left: 50px;
+    border-radius: 10px;
+    background-color: #D9D9D9;
+}
+#contraseña{
+    width: 400px;
+    height: 30px;
+    position:absolute;
+    top: 250px;
+    left: 50px;
+    right: 50px;
+    border-radius: 10px;
+    background-color: #D9D9D9;
+}
+ul{
+    font-family: "Boogaloo", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    position: relative;
+    top: 300px;
+    right: 90px;
+    list-style: none;
+    
+}
+#enviar{
+    height: 50px;
+    width: 200px;
+    position: absolute;
+    top: 400px;
+    border-radius: 20px;
+    background-color: #D9D9D9;
+    font-family: "Boogaloo", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 30px;
+}
+ 
+  

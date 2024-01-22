@@ -1,0 +1,172 @@
+body {
+    margin: 0 auto;
+    height: 1000px;
+    background-color: white;
+    
+}
+p{
+    font-family: "Kanit", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+header {
+    background-image: url(../img/cabecera.webp);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: 950%;
+    height: 300px;
+    
+    
+}
+header h1 {
+    font-family: "Boogaloo", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 50px;
+    margin: 0;
+    position: absolute;
+    left: 150px;
+    top: 30px;
+}
+header h3 {
+    font-family: "Indie Flower", cursive;
+    font-weight: 400;
+    font-style: normal;
+    color: #61FF00;
+    transform: rotate(-15deg);
+    position: absolute;
+    top: 70px;
+    left: 180px;
+}
+header img {
+    width: 100px;
+    filter: brightness(1.1);
+    mix-blend-mode: multiply;
+    position: relative;
+    left: 30px;
+    top: 10px;
+}
+.boton{
+    background-color: rgba(97, 255, 0, 0.7);
+    color: white;
+    border: none;
+    position: relative;
+    left: 80%;
+    top: 150px;
+    height: 33px;
+    cursor: pointer;
+}
+main{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.circulo{
+    font-family: "Boogaloo", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    font-size: 30px;
+    margin-top: 20px;
+    background-color: #966D4F;
+    border-radius: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    height: 400px;
+    margin: 5px;
+    
+}
+.busqueda{
+    position: relative;
+    left: 10%;
+}
+main aside img{
+    width: 800px;
+    height: 700px;
+}
+.contacto{
+    background-color: #d0ffb3;
+    height: 180px;
+    width: 550px;
+    position: absolute;
+    top: 820px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* padding-left: 100px; */
+}
+
+main .imagen img{
+    width: 550px;
+    height: 180px;
+    position: absolute;
+    top:820px;
+    right: 800px;
+}
+footer{
+    background-color: #CEBEB2;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+footer img{
+    width: 100px;
+    filter: brightness(1.1);
+    mix-blend-mode: multiply;
+}
+footer .informacion2 p:nth-of-type(2){
+    padding-left: 95px;
+
+}
+footer .informacion2 p:nth-of-type(3){
+    padding-left: 95px;
+}
+
+@media (width >= 720px) and (width <= 1080px){
+    
+    .boton {
+        position: relative;
+        left: 65%;
+    }
+    
+    main{
+        display: flex;
+        flex-wrap: wrap;
+        
+    }
+    .circulo{
+        width: 400px;
+        margin-left:50px;
+    }
+    main .imagen img{
+        width:100%;
+        /* position: absolute;
+        top:115%;
+        left: 50%;
+        width: 500px;
+        height: 400px; */
+    }
+    main .contacto{
+        position: absolute;
+        top: 81%;
+        left: 50%;
+        width: 500px;
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    main aside img{
+
+        width: 501px;
+    }
+   
+}

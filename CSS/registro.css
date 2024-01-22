@@ -1,0 +1,190 @@
+
+ body {
+    margin: 0 auto;
+    height: 1000px;
+    background-color: #CEBEB2;
+    max-width: 1200;
+}
+
+header {
+    background-image: url(../img/lesiones-trail-running.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 100%;
+    height: 300px;
+    
+    
+}
+header h1 {
+    font-family: "Boogaloo", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 50px;
+    margin: 0;
+    position: absolute;
+    left: 150px;
+    top: 30px;
+}
+header h3 {
+    font-family: "Indie Flower", cursive;
+    font-weight: 400;
+    font-style: normal;
+    color: #61FF00;
+    transform: rotate(-15deg);
+    position: absolute;
+    top: 70px;
+    left: 180px;
+}
+header img {
+    width: 100px;
+    filter: brightness(1.1);
+    mix-blend-mode: multiply;
+    position: relative;
+    left: 30px;
+    top: 10px;
+}
+
+.principal {
+    position: relative;
+    background-image: url(../img/PHOTO-2024-01-16-21-41-43.jpg);
+    background-size: cover;
+    background-position: 100%;
+    min-width: 100%;
+    background-repeat: no-repeat;
+    height: 1000px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.contenedor {
+    position: relative;
+    top: 600px;
+    left: 50%;
+    transform: translate(-50%, -60%);
+    background-color: rgba(97, 255, 0, 0.5);
+    width: 90%;
+    max-width: 700px;
+    height: 900px;
+    border-radius: 50px;
+    
+}
+
+
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+h1{
+    font-family: "Boogaloo", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    display: flex;
+    justify-content: center;
+}
+.nombre,
+.apellidos,
+.usuario,
+.correo,
+.contraseña,
+.repetir,
+.localidad,
+.imagen,
+.organizador,
+.telefono,
+.empresa {
+    font-family: "Boogaloo", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-left: 15%;
+
+}
+.si{
+    font-family: "Boogaloo", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-left: 15%;
+    
+
+}
+.no{
+    font-family: "Boogaloo", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-left: 15%;
+    position: relative;
+    bottom: 25px;
+
+}
+.telefono{
+    display: none;
+}
+.empresa{
+    display: none;
+}
+.rojo{
+    border-color: red;
+}
+#nombre,
+#apellidos,
+#usuario,
+#correo,
+#contraseña,
+#repetir,
+#localidad,
+#telefono,
+#empresa {
+    width: 90%;
+    max-width: 500px;
+    height: 30px;
+    border-radius: 10px;
+    background-color: #D9D9D9;
+    margin-bottom: 10px;
+    margin-left: 15%;
+    display: flex;
+    justify-content: center;
+    
+}
+#imagen{
+    width: 90%;
+    max-width: 500px;
+    height: 30px;
+    margin-left: 15%;
+    display: flex;
+    justify-content: center;
+}
+#organizador{
+    width: 90%;
+    max-width: 500px;
+    margin-left: 15%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    right: 220px;
+    bottom: 35px;
+}
+#organizador2{
+    width: 90%;
+    max-width: 500px;
+    margin-left: 15%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    right: 220px;
+    bottom: 60px;
+}
+
+
+#enviar {
+    height: 50px;
+    width: 90%;
+    max-width: 200px;
+    margin-top: 2%;
+    margin-left: 35%;
+    border-radius: 20px;
+    background-color: #D9D9D9;
+    font-family: "Boogaloo", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 30px;
+}

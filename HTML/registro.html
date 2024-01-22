@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NATURE RACE</title>
+    <link rel="shortcut icon" href="../img/OIG.jpeg" type="image/x-icon">
+    <link rel="stylesheet" href="../CSS/registro.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Boogaloo&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Boogaloo&family=Indie+Flower&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>NATURE RACE</h1>
+        <h3>¿PREPARADO PARA LA <br> AVENTURA?</h3>
+        <a href="./landinPage.html"><img src="../img/OIG.jpeg" alt="aqui hay un logo"></a>
+    </header>
+    <div class="principal">
+        <div class="contenedor">
+            <form action="" method="post">
+                <h1>CREAR CUENTA</h1>
+                <label for="nombre" class="nombre">NOMBRE QUE SE MOSTRARA</label><br>
+                <input type="text" name="nombre" id="nombre" ><br>
+                <label for="usuario" class="usuario" >NOMBRE DE USUARIO</label><br>
+                <input type="text" name="usuario" id="usuario" ><br>
+                <label for="correo" class="correo">CORREO</label><br>
+                <input type="text" name="correo" id="correo" ><br>
+                <label for="contraseña" class="contraseña">CONTRASEÑA</label><br>
+                <input type="text" id="contraseña"><br>
+                <label for="repetir" class="repetir">REPETIR CONTRASEÑA</label><br>
+                <input type="text" name="repetir" id="repetir" ><br>
+                <label for="localidad" class="localidad">LOCALIDAD</label>
+                <select name="localidad" id="localidad">
+                    <option value="leon">Leon</option>
+                </select>
+                <label for="imagen" class="imagen">IMAGEN DE PERFIL</label>
+                <input type="file" name="imagen" id="imagen">  
+                <label for="organizador" class="organizador">¿ERES ORGANIZADOR?</label>
+                <p class="si">SI</p><input type="radio" name="organizador" id="organizador">
+                <p class="no">NO</p><input type="radio" name="organizador" id="organizador2">
+                <label for="telefono" class="telefono">TELEFONO</label>
+                <input type="hidden" name="telefono" id="telefono">
+                <label for="empresa" class="empresa">NOMBRE DE LA EMPRESA O CLUB ORGANIZADOR</label>
+                <input type="hidden" name="empresa" id="empresa">
+                
+                
+                
+            </form>
+            <button id="enviar">ENVIAR</button>
+        </div>
+    </div>
+</body>
+<script src="../JavaScript/registro.js"></script>
+</html>
