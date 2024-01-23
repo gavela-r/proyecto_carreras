@@ -63,7 +63,7 @@ form {
     display: flex;
     justify-content: center;
     position: absolute;
-    left:1600px; /* Ajustar la posición horizontal */
+    left:1000px; /* Ajustar la posición horizontal */
     top: 30px;
     transform: translateX(-50%); /* Centrar horizontalmente */
     border-radius: 30px; /* Ajustar el radio del borde */
