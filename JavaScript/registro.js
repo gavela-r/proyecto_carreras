@@ -10,7 +10,7 @@ function validarCorreo() {
     if (!correoRegex.test(correoValue)) {
         correoInput.style.borderColor = 'red';
     } else {
-        correoInput.style.borderColor = '';  // Restablecer el color del borde si es válido
+        correoInput.style.borderColor = '#80ff00';  // Restablecer el color del borde si es válido
     }
 }
 
@@ -25,7 +25,7 @@ function validarUsuario() {
     if (!usuarioRegex.test(usuarioValue)) {
         usuario.style.borderColor = 'red';
     } else {
-        usuario.style.borderColor = '';
+        usuario.style.borderColor = '#80ff00';
     }
 }
 
@@ -37,33 +37,25 @@ contraseña.addEventListener('input', ()=>{
 
     if(contraseña.match(/[a-z]+/)){
         validacion++;
-    }else{
-        contraseñaInput.style.borderColor = 'red';
     }
 
     if(contraseña.match(/[A-Z]+/)){
         validacion++;
-    }else{
-        contraseñaInput.style.borderColor = 'red';
     }
 
     if(contraseña.match(/[0-9]+/)){
         validacion++;
-    }else{
-        contraseñaInput.style.borderColor = 'red';
     }
 
     if(contraseña.match(/[$@#%&/*]+/)){
         validacion++;
-    }else{
-        contraseñaInput.style.borderColor = 'red';
     }
 
     if(contraseña.length >= 8){
         validacion++;
-    }else{
-        contraseñaInput.style.borderColor = 'red';
     }
+
+    
 
     switch (validacion) {
         case 2:
@@ -86,7 +78,30 @@ contraseña.addEventListener('input', ()=>{
             mensaje.textContent = 'Muy débil';
             mensaje.style.color = '#ff0000';
     }
+
+    if(validacion <= 3){
+        contraseñaInput.style.borderColor = 'red';
+    }else{
+        contraseñaInput.style.borderColor = '#80ff00';
+    }
+
+    // if(validacion >= 4){
+
+    // }
 })
+
+let repetirInput = document.getElementById('repetir');
+enviar.addEventListener('click', repetirContraseña);
+
+function repetirContraseña(){
+    let repetir = repetirInput.value;
+
+    if(contraseñaInput.value == repetir){
+        repetirInput.style.borderColor = '#80ff00';
+    }else{
+        repetirInput.style.borderColor = 'red';
+    }
+}
 
 
 
