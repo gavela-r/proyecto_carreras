@@ -5,7 +5,7 @@ body{
     position: relative; 
 }
 header {
-    background-image: url(../img/lesiones-trail-running.jpeg);
+    background-image: url(/img/lesiones-trail-running.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;   
@@ -43,7 +43,7 @@ header img {
     top: 10px;
 }
 .principal{
-    background-image: url(../img/trailrunning.jpg);
+    background-image: url(/img/trailrunning.jpg);
     background-size: cover;
     height: 600px;
     width: 100%;
