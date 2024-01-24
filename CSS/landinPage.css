@@ -1,3 +1,35 @@
+/* html
+body{
+    margin: 0 auto;
+}
+
+p{
+    font-family: "Kanit", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+header{
+    background-image: url(../img/cabecera.webp);
+    background-repeat: no-repeat;
+    background-size:cover;
+    width: 1740px;
+    height: 100px;
+}
+
+header img{
+    width: 100px;
+    filter: brightness(1.1);
+    mix-blend-mode: multiply;
+    position: relative;
+    left: 30px;
+    top: 10px;
+} */
+html{
+    max-width: 2100px;
+    width: 100%;
+}
+
 body {
     margin: 0 auto;
     height: 1000px;
@@ -97,9 +129,9 @@ main aside img{
     justify-content: center;
     align-items: center;
     /* padding-left: 100px; */
-}
+ }
 
-main .imagen img{
+ main .imagen img{
     width: 450px;
     height: 180px;
     position: absolute;
@@ -129,7 +161,25 @@ footer .informacion2 p:nth-of-type(3){
     padding-left: 95px;
 }
 
-@media (width >= 720px) and (width <= 1080px){
+
+ 
+@media screen and (min-width: 1900px) and (max-width: 2000px){
+    .boton{
+        left: 80%;
+    }
+    main aside img{
+        width: 800px;
+    }
+    main .imagen img{
+        right: 800px;
+        width: 550px;
+    }
+    .contacto{
+        width: 550px;
+    }
+}
+
+ /* @media (width >= 720px) and (width <= 1080px){
     
     .boton {
         margin: 0 auto;
@@ -171,4 +221,4 @@ footer .informacion2 p:nth-of-type(3){
         width: 501px;
     }
    
-}
+}  */

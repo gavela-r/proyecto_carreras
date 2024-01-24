@@ -21,15 +21,15 @@
     </header>
     <div class="principal">
         <div class="contenedor">
-            <form action="" method="post">
+            <form action="./inicioSesion.html" method="POST">
                 <h1>CREAR CUENTA</h1>
                 
                 <label for="usuario" class="usuario" >NOMBRE DE USUARIO</label><br>
-                <input type="text" name="usuario" id="usuario" required><br>
+                <input type="text" name="nombre_usuario" id="usuario" required><br>
                 <label for="correo" class="correo">CORREO</label><br>
                 <input type="text" name="correo" id="correo" required><br>
                 <label for="contraseña" class="contraseña">CONTRASEÑA</label><br>
-                <input type="password" id="contraseña" required maxlength="25"><br>
+                <input type="password" id="contraseña" name="contraseña" required maxlength="25"><br>
                 <p id="mensaje"></p>
                 <label for="repetir" class="repetir">REPETIR CONTRASEÑA</label><br>
                 <input type="password" name="repetir" id="repetir" required maxlength="25"><br>
@@ -43,14 +43,14 @@
                 <p class="si">SI</p><input type="radio" name="organizador" id="organizador">
                 <p class="no">NO</p><input type="radio" name="organizador" id="organizador2">
                 <label for="telefono" class="telefono">TELEFONO</label>
-                <input type="hidden" name="telefono" id="telefono">
+                <input type="hidden" name="telefono" id="telefono" [6]{1}[0-9][8]>
                 <label for="empresa" class="empresa">NOMBRE DE LA EMPRESA O CLUB ORGANIZADOR</label>
-                <input type="hidden" name="empresa" id="empresa">
+                <input type="hidden" name="club" id="empresa">
                 
-                
+                <a href="./PHP/index.php"><input type="submit" value="ENVIAR" id="enviar"></a>
                 
             </form>
-            <button id="enviar">ENVIAR</button>
+            
         </div>
     </div>
 </body>
