@@ -1,5 +1,5 @@
 
- body {
+body {
     margin: 0 auto;
     height: 1000px;
     background-color: #CEBEB2;
@@ -187,7 +187,7 @@ h1{
     height: 50px;
     width: 90%;
     max-width: 200px;
-    margin-top: -30%;
+    margin-top: 10%;
     margin-left: 35%;
     border-radius: 20px;
     background-color: #D9D9D9;
