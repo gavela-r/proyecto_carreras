@@ -2,6 +2,7 @@ html{
     max-width: 2100px;
     width: 100%;
 }
+
 body {
     margin: 0 auto;
     height: 1000px;
@@ -46,19 +47,26 @@ header img {
     left: 30px;
     top: 10px;
 }
-
+#perfil{
+    position: absolute;
+    left: 1300px;
+    top: 20px;
+    cursor: pointer;
+}
+.enlace{
+    color: black;
+}
 .principal {
     position: relative;
-    background-image: url(../img/PHOTO-2024-01-16-21-41-43.jpg);
+    background-image: url(../img/5c07b4a50de6945b453494c7-trail-running-claves-carreras-montana.jpeg);
     background-size: cover;
     background-position: 100%;
     min-width: 100%;
     background-repeat: no-repeat;
     height: 1000px;
     margin-top: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
-
 .contenedor {
     position: relative;
     top: 600px;
@@ -66,136 +74,121 @@ header img {
     transform: translate(-50%, -60%);
     background-color: rgba(97, 255, 0, 0.5);
     width: 90%;
-    max-width: 700px;
-    height: 900px;
+    max-width: 780px;
+    height: 600px;
     border-radius: 50px;
-    
 }
-
-
-form{
-    display: flex;
-    flex-direction: column;
+.fotoPerfil{
+    width: 150px;
+    position: relative;
+    left: 80px;
+    top: 70px
 }
-
-h1{
+.editar{
     font-family: "Boogaloo", sans-serif;
     font-weight: 400;
     font-style: normal;
-    display: flex;
-    justify-content: center;
+    position: relative;
+    top: 60px;
+    left: 120px;
+}
+.presentacion{
+    font-family: "Boogaloo", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    background-color: #FFB800;
+    width: 300px;
+    position: relative;
+    top: 50px;
+    left: 30px;
 }
 .nombre,
-.apellidos,
 .usuario,
 .correo,
-.contraseña,
-.repetir,
-.localidad,
-.imagen,
-.organizador,
-.telefono,
-.empresa {
+.contraseña
+{
     font-family: "Boogaloo", sans-serif;
     font-weight: 400;
     font-style: normal;
-    margin-left: 15%;
-
-}
-.si{
-    font-family: "Boogaloo", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    margin-left: 15%;
-    
-
-}
-.no{
-    font-family: "Boogaloo", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    margin-left: 15%;
+    margin-left: 55%;
     position: relative;
-    bottom: 25px;
-
+    top: -400px;
 }
-.telefono{
-    display: none;
+.peso{
+    font-family: "Boogaloo", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-left: 55%;
+    position: relative;
+    top: -400px;
 }
-.empresa{
-    display: none;
-}
-.rojo{
-    border-color: red;
+.altura{
+    font-family: "Boogaloo", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-left: 55%;
+    position: relative;
+    left:150px;
+    top: -80px;
 }
 #nombre,
-#apellidos,
 #usuario,
 #correo,
-#contraseña,
-#repetir,
-#localidad,
-#telefono,
-#empresa {
-    width: 90%;
+#contraseña{
+    width: 40%;
     max-width: 500px;
     height: 30px;
-    border-radius: 10px;
+    border-radius: 40px;
     background-color: #D9D9D9;
-    margin-bottom: 10px;
-    margin-left: 15%;
+    position: relative;
+    top: -400px;
+    margin-left: 55%;
     display: flex;
     justify-content: center;
-    
 }
-#mensaje{
-    font-family: "Boogaloo", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    margin-left: 550px;
-    position: absolute;
-    bottom: 580px;
-}
-#imagen{
-    width: 90%;
+#peso{
+    width: 15%;
     max-width: 500px;
     height: 30px;
-    margin-left: 15%;
+    border-radius:40px;
+    background-color: #D9D9D9;
+    margin-top: -50%;
+    margin-left: 55%;
     display: flex;
     justify-content: center;
 }
-#organizador{
-    width: 90%;
+#altura{
+    width: 15%;
     max-width: 500px;
-    margin-left: 15%;
+    height: 30px;
+    border-radius: 40px;
+    background-color: #D9D9D9;
+    margin-left: 55%;
     display: flex;
     justify-content: center;
     position: relative;
-    right: 220px;
-    bottom: 35px;
+    left: 140px;
+    top: -74px;
 }
-#organizador2{
-    width: 90%;
-    max-width: 500px;
-    margin-left: 15%;
-    display: flex;
-    justify-content: center;
-    position: relative;
-    right: 220px;
-    bottom: 60px;
-}
-
-
-#enviar {
-    height: 50px;
-    width: 90%;
+input[type="submit"]{
+    background-color: #61FF00;
+    height: 30px;
+    width: 13%;
     max-width: 200px;
-    margin-top: 10%;
-    margin-left: 35%;
-    border-radius: 20px;
-    background-color: #D9D9D9;
+    border-radius: 10px;
     font-family: "Boogaloo", sans-serif;
-    font-weight: 400;
+    font-weight: 100;
     font-style: normal;
-    font-size: 30px;
+    font-size: 10px;
+    margin: 0 30px 0 ;
+    position: relative;
+    left: 350px;
+    top: -40px;
 }
+#flecha{
+    position: relative;
+    top: 50px;
+    right: 290px;
+    color: black;
+}
+

@@ -15,33 +15,38 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Boogaloo&family=Indie+Flower&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./CSS/añadirCarreras.css">
+    <link rel="stylesheet" href="./CSS/editarPerfil.css">
 </head>
 <body>
     <header>
-        <a href="principal.html"><i class="fa-solid fa-user" id="perfil"></i></a>
         <h1>NATURE RACE</h1>
         <h3>¿PREPARADO PARA LA <br> AVENTURA?</h3>
         <a href="index.html"><img src="./img/OIG.jpeg" alt="aqui hay un logo"></a>
-        <a href="principal.html"><button class="boton">INICIO</button></a>
     </header>
     <div class="principal">
         <div class="contenedor">
             <form action="" method="post">
-                <h1>AÑADIR CARRERAS</h1>
-
+                <img src="./img/Imagen de WhatsApp 2023-12-30 a las 17.23.03_471579b8.jpg" alt="aqui hay una foto" class="fotoPerfil">
+                <p class="editar">Editar foto de <br> perfil</p>
+            <div class="presentacion">
+                <h2 class="titulo">PRESENTACION</h2><p>(Haz una breve descripción sobre ti)</p>
+                <textarea name="descripcuion" id="descripcion" cols="30" rows="10"></textarea>
+            </div>
                 <label for="nombre" class="nombre">NOMBRE</label><br>
-                <input type="text" id="nombre" required><br>
-                <label for="apellidos" class="apellidos">APELLIDOS</label><br>
-                <input type="text" id="apellidos" required><br>
-                <label for="text" class="fecha">FECHA DE REALIZACION</label><br>
-                <input type="text" id="fecha" required><br>
-                <label for="text" class="nombre_carrera">NOMBRE DE LA CARRERA</label><br>
-                <input type="text" id="nombre_carrera" required><br>
-                <label for="numero" class="numero">NUMERO DE PARTICIPANTES</label><br>
-                <input type="number" id="numero" required>
+                <input type="text" id="nombre"><br>
+                <label for="usuario" class="usuario">NOMBRE DE USUARIO</label><br>
+                <input type="text" id="usuario"><br>
+                <label for="correo" class="correo">CORREO ELECTRONICO</label><br>
+                <input type="text" id="correo"><br>
+                <label for="contraseña" class="contraseña">CONTRASEÑA</label><br>
+                <input type="password" id="contraseña"><br>
+                <label for="peso" class="peso">PESO</label><br>
+                <input type="number" id="peso"><br>
+                <label for="altura" class="altura">ALTURA</label><br>
+                <input type="number" id="altura">
 
-                <input type="submit" value="Enviar" id="enviar">
-    </div>
+                <input type="submit" value="Realizar cambios" id="realizar">
+                <input type="submit" value="Restablecer" id="restablecer">
+               <a href="principal.html"> <i class="fa-solid fa-arrow-left" id="flecha"></i></a>
 </body>
 </html>

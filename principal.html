@@ -15,33 +15,38 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Boogaloo&family=Indie+Flower&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./CSS/añadirCarreras.css">
+    <link rel="stylesheet" href="./CSS/principal.css">
 </head>
 <body>
     <header>
-        <a href="principal.html"><i class="fa-solid fa-user" id="perfil"></i></a>
+        <a href="editarPerfil.html" class="enlace"><i class="fa-solid fa-user" id="perfil"></i></a>
         <h1>NATURE RACE</h1>
         <h3>¿PREPARADO PARA LA <br> AVENTURA?</h3>
         <a href="index.html"><img src="./img/OIG.jpeg" alt="aqui hay un logo"></a>
-        <a href="principal.html"><button class="boton">INICIO</button></a>
     </header>
-    <div class="principal">
-        <div class="contenedor">
-            <form action="" method="post">
-                <h1>AÑADIR CARRERAS</h1>
-
-                <label for="nombre" class="nombre">NOMBRE</label><br>
-                <input type="text" id="nombre" required><br>
-                <label for="apellidos" class="apellidos">APELLIDOS</label><br>
-                <input type="text" id="apellidos" required><br>
-                <label for="text" class="fecha">FECHA DE REALIZACION</label><br>
-                <input type="text" id="fecha" required><br>
-                <label for="text" class="nombre_carrera">NOMBRE DE LA CARRERA</label><br>
-                <input type="text" id="nombre_carrera" required><br>
-                <label for="numero" class="numero">NUMERO DE PARTICIPANTES</label><br>
-                <input type="number" id="numero" required>
-
-                <input type="submit" value="Enviar" id="enviar">
-    </div>
+    <main>
+        <div class="misCarreras">
+            <i class="fa-solid fa-location-dot" id="ubicacion"></i><a href=""><h1 class="carreras">MIS CARRERAS</h1></a>
+            <p class="texto">Vuelve a disfrutar de las aventuras y experiencias vividas, te damos la posibilidad de descubrir informacion interesante y datos sobre los resultados de tus carreras</p>
+            <img src="./img/09-barcena-paguenzo-mapa.jpg" alt="aqui hay una foto" class="mapa">
+        </div>
+        <div class="busqueda">
+            <h1 class="titulo">¿Quieres descubrir nuevos desafios?</h1>
+            <input type="text" class="buscar" placeholder="ubicacion"><div class="lupa"><button><i class="fa-solid fa-magnifying-glass"></i></button></div>
+        </div>
+    </main>
+    <footer>
+        <div class="informacion">
+            <p>Fundador: Adrián Gavela</p>
+            <p>Correo: adrian.gavela@gmail.com</p>
+            <p>Teléfono : 000 000 000</p>
+        </div>
+        <img src="./img/OIG.jpeg" alt="aqui hay un logo">
+        <div class="informacion2">
+            <p>Politica de privacidad</p>
+            <p>Cookies</p>
+            <p>Noticias</p>
+        </div>
+    </footer>
 </body>
 </html>
