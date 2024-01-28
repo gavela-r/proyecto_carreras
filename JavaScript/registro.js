@@ -1,10 +1,32 @@
-
-
 let correoInput = document.getElementById('correo');
 let correoRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
 
 let mensaje = document.getElementById('mensaje');
-enviar.addEventListener('click', validarCorreo);
+enviar.addEventListener('click', function(){
+      
+    // Llamar a las funciones de validación
+    validarCorreo();
+    validarUsuario();
+    repetirContraseña();
+
+    // Verificar si todos los campos son válidos antes de permitir el registro
+    // Verificar si todos los campos son válidos antes de permitir el registro
+      if (
+        correoInput.style.borderColor !== 'red' &&
+        usuario.style.borderColor !== 'red' &&
+        repetirInput.style.borderColor !== 'red'
+    ) {
+        // Verificar si la contraseña está presente y es válida
+        if (contraseñaInput.style.borderColor !== 'red' && mensaje.textContent !== 'Muy débil' || mensaje.textContent !== 'Débil' || mensaje.textContent !== 'Media') {
+            // window.location.href = 'inicioSesion.html';  
+        } else {
+            alert('Por favor, corrige los errores en el formulario');
+        }
+    } else {
+        alert('Por favor, corrige los errores en el formulario');
+    }
+});
+
 
 function validarCorreo() {
     let correoValue = correoInput.value;
@@ -19,7 +41,6 @@ function validarCorreo() {
 let usuario = document.getElementById('usuario');
 let usuarioRegex = /^(?![_-])[a-zA-Z0-9_-]{4,20}(?![_-])$/;
 
-enviar.addEventListener('click', validarUsuario);
 
 function validarUsuario() {
     let usuarioValue = usuario.value;
@@ -34,6 +55,7 @@ function validarUsuario() {
 let contraseñaInput = document.getElementById('contraseña');
 
 contraseña.addEventListener('input', ()=>{
+   
     let contraseña = contraseñaInput.value;
     let validacion = 0;
 
@@ -87,13 +109,10 @@ contraseña.addEventListener('input', ()=>{
         contraseñaInput.style.borderColor = '#80ff00';
     }
 
-    // if(validacion >= 4){
-
-    // }
+    
 })
 
 let repetirInput = document.getElementById('repetir');
-enviar.addEventListener('click', repetirContraseña);
 
 function repetirContraseña(){
     let repetir = repetirInput.value;
@@ -104,36 +123,4 @@ function repetirContraseña(){
         repetirInput.style.borderColor = 'red';
     }
 }
-
-
-// let nombreUsuario = document.getElementById('usuario');
-// let correo = document.getElementById('correo');
-// let contraseña = document.getElementById('contraseña');
-// let localidad = document.getElementById('localidad');
-
-// let usuarioNuevo = {
-//     'nombre':nombreUsuario.value.trim(),
-//     'correo': correo.value.trim(),
-//     'contraseña':contraseña.value.trim(),
-//     'localidad': localidad.value.trim(),
-// }
-
-// let option = {
-//     method: "POST",
-//     header: {
-//         'Content-Type': 'application/json'   
-//     },
-//     body: JSON.stringify(usuarioNuevo)
-// };
-
-// fetch('http://localhost:3000/PHP/usuarios.php', option)
-// .then(res => {
-//     if(res == 200){
-//         return res.json;
-//     }
-
-// })
-// .then(data => {
-//     console.log(data);
-// })
 
