@@ -146,3 +146,27 @@ h1{
     font-style: normal;
     font-size: 30px;
 }
+
+@media screen and (min-width: 1900px) and (max-width: 2000px){
+    .boton{
+        left: 1600px;
+    }
+    #enviar{
+        margin-top: 30%;
+    }
+    #nombre,
+    #apellidos,
+    #fecha,
+    #nombre_carrera,
+    #numero{
+        margin-top: 5%;
+    }
+    .nombre,
+    .apellidos,
+    .fecha,
+    .nombre_carrera,
+    .numero{
+        position:relative;
+        top: 30px;
+    }
+}

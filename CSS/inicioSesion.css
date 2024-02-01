@@ -93,7 +93,7 @@ h1{
     top: 220px;
     right: 70px;
 }
-#texto{
+#email{
     width: 400px;
     height: 30px;
     position:absolute;
@@ -103,7 +103,7 @@ h1{
     border-radius: 10px;
     background-color: #D9D9D9;
 }
-#contraseña{
+#contrasena{
     width: 400px;
     height: 30px;
     position:absolute;

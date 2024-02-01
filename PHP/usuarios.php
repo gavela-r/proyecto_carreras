@@ -17,10 +17,11 @@
 
 
             try{
-                $sql2 = "INSERT nombre_usuario FROM usuarios WHERE nombre_usuario = '$nombre' OR correo = '$correo' OR telefono = '$telefono'";
+                $sql2 = "INSERT nombre_usuario FROM usuarios WHERE nombre_usuario = '$nombre' OR correo = '$correo'";
                 $resultado = $con->query($sql2);
+                echo $resultado;
                 $usuario = $resultado->fetch_all(MYSQLI_ASSOC); 
-
+                
                 if($usuario != null){
                     header("HTTP/1.1 400 Bad Request");
                     die();

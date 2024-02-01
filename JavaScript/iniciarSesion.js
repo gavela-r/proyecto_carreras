@@ -3,16 +3,16 @@ let formulario = document.querySelector('form');
 formulario.addEventListener('submit', (event)=>{
     event.preventDefault();
     
-    let nombreUsuario = document.getElementById('usuario');
-    let correo = document.getElementById('correo');
-    let contraseña = document.getElementById('contraseña');
-    let localidad = document.getElementById('localidad');
+    
+    let correo = document.getElementById('email');
+    let contraseña = document.getElementById('contrasena');
+
 
     let usuarioNuevo = {
-        'nombre':nombreUsuario.value.trim(),
-        'correo': correo.value.trim(),
-        'contraseña':contraseña.value.trim(),
-        'localidad': localidad.value.trim(),
+ 
+        'email': correo.value.trim(),
+        'contrasena':contraseña.value.trim(),
+
     }
 
     let option = {
@@ -23,10 +23,10 @@ formulario.addEventListener('submit', (event)=>{
         },
         body: JSON.stringify(usuarioNuevo)
     };
-
+  
     
 
-    fetch('http://localhost:3000/PHP/usuarios.php', option)
+    fetch('http://localhost:3000/PHP/iniciarSesion.php', option)
     .then(res => {
         if(res.status == 200){
              return res.json();
@@ -41,10 +41,8 @@ formulario.addEventListener('submit', (event)=>{
             console.log(data);
         }
         
+        
     })
-    
-   
-    
 
     .catch(error =>{
         console.log('Error', error);
