@@ -23,9 +23,11 @@ formulario.addEventListener('submit', (event)=>{
         },
         body: JSON.stringify(usuarioNuevo)
     };
-  
-    
+  function guardarToken(token){
+    localStorage.setItem('elToken', token)
+  }
 
+   
     fetch('http://localhost:3000/PHP/iniciarSesion.php', option)
     .then(res => {
         if(res.status == 200){
@@ -35,11 +37,15 @@ formulario.addEventListener('submit', (event)=>{
         console.log(res);
     })
     .then(data => {
-        if (data.error) {
-            console.error('Error:', data.error);
-        } else {
+        
+        if (data.token){
+            guardarToken(data.token);
             console.log(data);
+            window.location.href = '../principal.html';
+        }else{
+            console.log('Error', data.error);
         }
+        
         
         
     })

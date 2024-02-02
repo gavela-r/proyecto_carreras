@@ -18,7 +18,7 @@ enviar.addEventListener('click', function(){
     ) {
         // Verificar si la contraseña está presente y es válida
         if (contraseñaInput.style.borderColor !== 'red' && mensaje.textContent !== 'Muy débil' || mensaje.textContent !== 'Débil' || mensaje.textContent !== 'Media') {
-            // window.location.href = 'inicioSesion.html';  
+            window.location.href = 'inicioSesion.html';  
             
         } else {
             alert('Por favor, corrige los errores en el formulario');
