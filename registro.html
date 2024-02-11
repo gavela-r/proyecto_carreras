@@ -34,18 +34,18 @@
                 <label for="repetir" class="repetir">REPETIR CONTRASEÑA</label><br>
                 <input type="password" name="repetir" id="repetir" maxlength="25" required><br>
                 <label for="localidad" class="localidad">LOCALIDAD</label>
-                <select name="localidad" id="localidad">
-                    <option value="leon">Leon</option>
-                </select>
+                <input type="text" id="localidad" list="localidades">
+                <datalist id="localidades"></datalist>
                 <label for="imagen" class="imagen">IMAGEN DE PERFIL</label>
                 <input type="file" name="imagen" id="imagen">  
                 <label for="organizador" class="organizador">¿ERES ORGANIZADOR?</label>
                 <p class="si">SI</p><input type="radio" name="organizador" id="organizador">
                 <p class="no">NO</p><input type="radio" name="organizador" id="organizador2">
-                <label for="telefono" class="telefono">TELEFONO</label>
-                <input type="hidden" name="telefono" id="telefono" [6]{1}[0-9][8]>
-                <label for="empresa" class="empresa">NOMBRE DE LA EMPRESA O CLUB ORGANIZADOR</label>
-                <input type="hidden" name="club" id="empresa">
+                <label for="telefono" class="telefono" id="telefono_label" style="display: none;">TELEFONO</label>
+                <input type="text" name="telefono" id="telefono" style="display: none;">
+                <label for="empresa" class="empresa" id="empresa_label" style="display: none;">NOMBRE DE LA EMPRESA O CLUB ORGANIZADOR</label>
+                <input type="text" name="club" id="club" style="display: none;">
+                
                 
                 <input type="submit" value="ENVIAR" id="enviar">
                 
@@ -56,4 +56,5 @@
 </body>
 <script src="./JavaScript/registro.js"></script>
 <script src="./JavaScript/recogerUsuario.js"></script>
+<!-- <script src="./JavaScript/recogerOrganizadores.js"></script> -->
 </html>

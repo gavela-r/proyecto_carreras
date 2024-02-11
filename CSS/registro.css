@@ -54,7 +54,7 @@ header img {
     background-position: 100%;
     min-width: 100%;
     background-repeat: no-repeat;
-    height: 1000px;
+    height: 1100px;
     margin-top: 20px;
     margin-bottom: 20px;
 }
@@ -119,12 +119,8 @@ h1{
     bottom: 25px;
 
 }
-.telefono{
-    display: none;
-}
-.empresa{
-    display: none;
-}
+
+
 .rojo{
     border-color: red;
 }
@@ -136,7 +132,7 @@ h1{
 #repetir,
 #localidad,
 #telefono,
-#empresa {
+#club {
     width: 90%;
     max-width: 500px;
     height: 30px;

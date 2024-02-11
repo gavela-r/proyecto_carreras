@@ -51,7 +51,15 @@ header img {
     position: absolute;
     left: 1300px;
     top: 20px;
+    color: white;
     cursor: pointer;
+}
+#aside{
+    color: black;
+    position: relative;
+    left: 30px;
+    cursor: pointer;
+    top: 15px;
 }
 a{
     color: black;
@@ -107,10 +115,11 @@ h1{
     display: flex;
     justify-content: center;
 }
-.nombre,
-.apellidos,
+
 .fecha,
+.distancia,
 .nombre_carrera,
+.localidad,
 .numero{
     font-family: "Boogaloo", sans-serif;
     font-weight: 400;
@@ -118,10 +127,11 @@ h1{
     margin-left: 15%;
 
 }
-#nombre,
-#apellidos,
+
 #fecha,
+#distancia,
 #nombre_carrera,
+#localidad,
 #numero{
     width: 90%;
     max-width: 500px;
@@ -146,8 +156,63 @@ h1{
     font-style: normal;
     font-size: 30px;
 }
+#izq {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f0f0f0; 
+    padding: 20px;
+    width: 200px;
+    height: 105vh;
+    max-width: 200px; 
+}
+
+#menu {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+#menu2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#menu2 div {
+    width: 80%;
+    height: 1px;
+    background-color: #ccc; /* Color de las líneas */
+    margin: 5px 0;
+}
+
+#user {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+span {
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+span:hover {
+    color: blue; /* Cambia el color al pasar el ratón */
+}
+
+#logout span {
+    color: red; /* Color rojo para cerrar sesión */
+}
+.mostrar{
+   display: flex !important;
+}
 
 @media screen and (min-width: 1900px) and (max-width: 2000px){
+    #perfil{
+        left: 1850px;
+    }
     .boton{
         left: 1600px;
     }

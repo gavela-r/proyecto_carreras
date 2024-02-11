@@ -19,10 +19,10 @@
 </head>
 <body>
     <header>
-        <a href="principal.html"><i class="fa-solid fa-user" id="perfil"></i></a>
+        <i class="fa-solid fa-bars" id="perfil"></i>
         <h1>NATURE RACE</h1>
         <h3>¿PREPARADO PARA LA <br> AVENTURA?</h3>
-        <a href="index.html"><img src="./img/OIG.jpeg" alt="aqui hay un logo"></a>
+        <a href="./principal.html"><img src="./img/OIG.jpeg" alt="aqui hay un logo"></a>
         <a href="principal.html"><button class="boton">INICIO</button></a>
     </header>
     <div class="principal">
@@ -30,18 +30,49 @@
             <form action="" method="post">
                 <h1>AÑADIR CARRERAS</h1>
 
-                <label for="nombre" class="nombre">NOMBRE</label><br>
-                <input type="text" id="nombre" required><br>
-                <label for="apellidos" class="apellidos">APELLIDOS</label><br>
-                <input type="text" id="apellidos" required><br>
-                <label for="text" class="fecha">FECHA DE REALIZACION</label><br>
-                <input type="text" id="fecha" required><br>
-                <label for="text" class="nombre_carrera">NOMBRE DE LA CARRERA</label><br>
-                <input type="text" id="nombre_carrera" required><br>
+                <label for="nombre" class="nombre_carrera">NOMBRE DE LA CARRERA</label><br>
+                <input type="text" id="nombre_carrera" name="nombre_carrera" required><br>
+                <label for="fecha" class="fecha">FECHA DE REALIZACION</label><br>
+                <input type="date" id="fecha" name="fecha" required><br>
+                <label for="distancia" class="distancia">DISTANCIA</label>
+                <input type="number" id="distancia" name="distancia" required><br>
+                <label for="localidad" class="localidad">LOCALIDAD</label>
+                <input type="text" id="localidad" list="localidades" name="localidad" required>
+                <datalist id="localidades"></datalist>
                 <label for="numero" class="numero">NUMERO DE PARTICIPANTES</label><br>
-                <input type="number" id="numero" required>
+                <input type="number" id="numero" nume="numero" required>
 
                 <input type="submit" value="Enviar" id="enviar">
+            </form>
+        </div>
     </div>
+    <aside id="izq">
+        <i class="fa-solid fa-xmark" id="aside"></i>
+       <div id="menu">
+       <div id="menu">
+        <div id="user">
+            usuario
+        </div>
+        <div id="menu2">
+            
+        </div>
+       </div>
+       <div>
+            <span><a href="./editarPerfil.html">Editar perfil</a></span>
+       </div>
+       <div>
+            <span><a href="./misCarreras.html">Mis carreras</a></span>
+       </div>
+       <div>
+            <span><a href=""></a>Otras carreras</span>
+       </div>
+       <div>
+            <span><a href="./añadirCarrera.html">Añadir carreras</a></span>
+       </div>
+       <div id="logout">
+            <span>Cerrar sesion</span>
+       </div>
+    </aside>
 </body>
+<script src="./JavaScript/añadir_carreras.js"></script>
 </html>

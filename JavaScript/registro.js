@@ -18,7 +18,7 @@ enviar.addEventListener('click', function(){
     ) {
         // Verificar si la contraseña está presente y es válida
         if (contraseñaInput.style.borderColor !== 'red' && mensaje.textContent !== 'Muy débil' || mensaje.textContent !== 'Débil' || mensaje.textContent !== 'Media') {
-            window.location.href = 'inicioSesion.html';  
+            // window.location.href = '../inicioSesion.html';  
             
         } else {
             alert('Por favor, corrige los errores en el formulario');
@@ -35,7 +35,7 @@ function validarCorreo() {
     if (!correoRegex.test(correoValue)) {
         correoInput.style.borderColor = 'red';
     } else {
-        correoInput.style.borderColor = '#80ff00';  // Restablecer el color del borde si es válido
+        correoInput.style.borderColor = '';  // Restablecer el color del borde si es válido
     }
 }
 
@@ -49,7 +49,7 @@ function validarUsuario() {
     if (!usuarioRegex.test(usuarioValue)) {
         usuario.style.borderColor = 'red';
     } else {
-        usuario.style.borderColor = '#80ff00';
+        usuario.style.borderColor = '';
     }
 }
 
@@ -124,4 +124,58 @@ function repetirContraseña(){
         repetirInput.style.borderColor = 'red';
     }
 }
+let telefono = document.getElementById('telefono');
+let empresa  = document.getElementById('empresa_label');
+let phone = document.getElementById('telefono_label');
+let club = document.getElementById('club');
+
+let si = document.getElementById('organizador')
+let no = document.getElementById('organizador2');
+
+si.addEventListener('change', function(){
+    if(si.checked){
+        phone.style.display = 'block';
+        club.style.display = 'block';
+        telefono.style.display ='block';
+        empresa.style.display = 'block';
+    }else{
+        phone.style.display = 'none';
+        club.style.display = 'none'
+        telefono.style.display = 'none';
+        empresa.style.display = 'none';
+    }
+});
+
+no.addEventListener('change', function(){
+    if(no.checked){
+        phone.style.display = 'none';
+        club.style.display = 'none';
+        telefono.style.display = 'none';
+        empresa.style.display = 'none';
+    }else{
+        phone.style.display = 'block';
+        phone.style.display = 'block';
+        telefono.style.display = 'block';
+        empresa.style.display = 'block';
+    }
+})
+
+
+
+
+
+fetch("../provincias.json")
+.then((response) => response.json())
+.then((data) => {
+  let datalist = document.getElementById("localidades");
+
+  data.forEach((provincia) => {
+    let option = document.createElement("option");
+    option.value = provincia.label;
+    datalist.appendChild(option);
+  });
+})
+.catch((error) =>
+  console.error("Error al cargar las provincias:", error)
+);
 

@@ -1,4 +1,8 @@
 <?php
+    header("Access-Control-Allow-Origin: http://222.222.222.234");
+    header("Access-Control-Allow-Headers: *");
+    header("Access-Control-Allow-Methods: POST");
+
     require_once './index.php';
     require_once '../vendor/autoload.php';
 

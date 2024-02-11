@@ -7,7 +7,7 @@ html{
 body {
     margin: 0 auto;
     height: 1000px;
-    background-color: hsl(26, 22%, 75%);
+    background-color: #CEBEB2;
     max-width: 1200;
 }
 
@@ -61,34 +61,33 @@ header img {
     position: relative;
     left: 30px;
     cursor: pointer;
-    
     top: 15px;
 }
-
 .enlace{
     color: black;
 }
-
-main{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
+.boton{
+    font-family: "Boogaloo", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    background-color: rgba(97, 255, 0, 0.7);
+    color: white;
+    border: none;
+    position: relative;
+    left: 80%;
+    top: 150px;
+    height: 33px;
+    cursor: pointer;
+    width: 100px;
 }
 
-.misCarreras{
-    width: 900px;
-    height: 600px;
-    background-color: #D9D9D9;
-    margin-top: 20px;
-    margin-right: 10px;
-    margin-left: 30px;
-}
+
+
 a{
     text-decoration: none;
 }
-.carreras{
-    margin: 0 auto;
+.titulo1{
     font-family: "Boogaloo", sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -97,65 +96,110 @@ a{
     justify-content: center;
     align-items: center;
     color: #6B8E23;
-}
-.texto{
-    padding-left: 30px;
-}
-#ubicacion{
-    position: relative;
-    left: 130px;
-    top: 45px;
-    font-size: 3em;
-}
-.mapa{
-    width: 500px;
-    margin-left: 70px;
-}
-.busqueda{
-    width: 900px;
-    height: 600px;
-    background-color: #D9D9D9;
-    margin-top: 20px;
-    margin-right: 30px;
-
 }
 .titulo{
+    margin: 0 auto;
+    font-family: "Boogaloo", sans-serif;
+    font-weight:100;
+    font-style: normal;
+    font-size: 50px; 
+    position: relative;
+    left: 40px;   
+    top: -50px;
+    color: #6B8E23;
+}
+
+#ubicacion{
+    
+    font-size: 3em;
+}
+.carrera1,
+.carrera2,
+.carrera3{
+    font-family: "Kanit", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    width: 500px;
+    height: 200px;
+    background-color: #D9D9D9;
+    margin-top: 20px;
+    margin-right: 500px;
+    margin-left: 100px;
+    padding: 20px;
+}
+.texto{
+    position: relative;
+    top: -40px;
+}
+.flecha{
+    position: relative;
+    left: 640px;
+    top: -110px;
+    height: 10px;
+    width: 350px;
+    background-color: #6B8E23;
+}
+.foto1{
+    position: absolute;
+    left: 800px;
+    top: 450px;
+    width: 300px;
+}
+.foto2{
+    position: absolute;
+    left: 800px;
+    top: 750px;
+    width:350px;
+}
+.foto3{
+    position: absolute;
+    left: 800px;
+    top: 980px;
+    width: 350px;
+}
+
+
+.añadir{
     font-family: "Boogaloo", sans-serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 50px;    
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #6B8E23;
-    margin-top: 40px;
-}
-.buscar{
-    width: 50%;
-    max-width: 500px;
-    height: 30px;
-    border-radius: 10px;
-    background-color: white;
-    margin-top: 100px;
-    margin-left: 20%;
-}
-.lupa{
-    width: 50px;
-    height: 50px;
-    background-color: white;
-    border-radius: 50%;
-    position: relative;
-    left: 460px;
-    top: -45px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-button{
-    background: none;
+    font-size: 20px;
+    background-color: #56A724;
+    color: white;
     border: none;
-    padding: 0;
+    position: relative;
+    left: 200px;
+    height: 33px;
     cursor: pointer;
+    width: 100px;
+}
+.eliminar{
+    font-family: "Boogaloo", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    background-color: #FF0000;
+    color: white;
+    border: none;
+    position: relative;
+    left: 200px;
+    height: 33px;
+    cursor: pointer;
+    width: 100px;
+}
+.otras{
+    font-family: "Boogaloo", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    background-color: #56A724;
+    color: white;
+    border: none;
+    position: relative;
+    left: 900px;
+    height: 33px;
+    cursor: pointer;
+    width: 150px;
 }
 #izq {
     position: absolute;
@@ -209,7 +253,9 @@ span:hover {
 .mostrar{
    display: flex !important;
 }
+
 footer{
+
     background-color: #CEBEB2;
     display: flex;
     flex-direction: row;
@@ -218,11 +264,6 @@ footer{
     padding-left: 50px;
     padding-right: 50px;
 }
-p{
-    font-family: "Kanit", sans-serif;
-    font-weight: 300;
-    font-style: normal;
-}
 
 footer img{
     width: 100px;
@@ -230,9 +271,7 @@ footer img{
     mix-blend-mode: multiply;
 }
 footer .informacion2 p:nth-of-type(2){
-    font-family: "Kanit", sans-serif;
-    font-weight: 300;
-    font-style: normal;
+   
     padding-left: 95px;
 
 }
@@ -243,19 +282,25 @@ footer .informacion2 p:nth-of-type(3){
     padding-left: 95px;
 }
 
-
 @media screen and (min-width: 1900px) and (max-width: 2000px){
     #perfil{
         left: 1850px;
     }
-    #ubicacion{
-        left: 260px;
-        top: 50px;
+    .foto1,
+    .foto2,
+    .foto3{
+        left: 1100px;
+        
     }
-    .mapa{
-        margin-left: 200px;
+    .flecha{
+        left: 840px;
     }
-    .lupa{
-        left: 650px;
+    .carrera1,
+    .carrera2,
+    .carrera3{
+        margin-left: 300px;
+    }
+    .otras{
+        left: 1400px;
     }
 }

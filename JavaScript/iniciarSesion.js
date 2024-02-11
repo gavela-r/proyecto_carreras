@@ -1,4 +1,9 @@
 let formulario = document.querySelector('form');
+let correo = document.getElementById('email');
+
+
+
+
 
 formulario.addEventListener('submit', (event)=>{
     event.preventDefault();
@@ -6,7 +11,7 @@ formulario.addEventListener('submit', (event)=>{
     
     let correo = document.getElementById('email');
     let contraseña = document.getElementById('contrasena');
-
+    
 
     let usuarioNuevo = {
  
@@ -28,13 +33,17 @@ formulario.addEventListener('submit', (event)=>{
   }
 
    
-    fetch('http://localhost:3000/PHP/iniciarSesion.php', option)
+    fetch('http://222.222.222.234/PHP/iniciarSesion.php', option)
     .then(res => {
         if(res.status == 200){
              return res.json();
 
+        }else{
+            correo.style.border = "2px solid red";
+            contraseña.style.border = "2px solid red";
+           
         }
-        console.log(res);
+        console.log(correo);
     })
     .then(data => {
         
@@ -43,6 +52,7 @@ formulario.addEventListener('submit', (event)=>{
             console.log(data);
             window.location.href = '../principal.html';
         }else{
+            alert('El correo o la contraseña son incorrectos');
             console.log('Error', data.error);
         }
         
