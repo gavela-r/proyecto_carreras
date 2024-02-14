@@ -18,33 +18,44 @@
         if($datos != null){
             $correo = $datos['email'];
             $contraseña = $datos['contrasena'];
-            
+
     }
         try{
             $sql = "SELECT correo, contraseña FROM usuarios WHERE correo = '$correo' ";
             $resultado = $con->query($sql);
-
             $usuario = $resultado->fetch_assoc();
+
+            if(!$usuario){
+                $sql_organizador = "SELECT correo, contraseña FROM organizador WHERE correo = '$correo'";
+                $resultado_organizador = $con->query($sql_organizador);
+                $usuario = $resultado_organizador->fetch_assoc();
+                
+            }
             
-            $pass = $usuario['contraseña'];
-       
+          
             if ($usuario != null) {
+                $pass = $usuario['contraseña'];
                 if (password_verify($contraseña, $pass)) {
                     
                     $key = 'proyectoDeAdrian';
                     $payload = [
-                        'it' => time(),
+                        'iat' => time(),
                         'correo' => $correo,
                         'exp' => time() + (60*60*24)
                     ];
                     $jwt = JWT::encode($payload, $key, 'HS256');
                     
-                    echo json_encode(array("token" => $jwt));
+                    $respuesta = [ 
+                        'correo' => $correo,
+                        'jwt' => $jwt, 
+                    ]; 
+                    header("HTTP/1.1 200 Ok"); 
+                    echo json_encode($respuesta); 
                 } else {
                     echo json_encode(array("message" => "datos incorrectos"));
                 }
             } else {
-                echo json_encode(array("message" => "Datos incorrectoslllll"));
+                echo json_encode(array("message" => "Datos incorrectosssssssss"));
             }
             
              

@@ -9,8 +9,8 @@
 
         private $host = 'localhost';
         private $db = 'carreras';
-        private $user = 'root';
-        private $passwd = '';
+        private $user = 'root'; //proyecto
+        private $passwd = ''; //Adri_2001
 
         public function __construct(){
             try{
