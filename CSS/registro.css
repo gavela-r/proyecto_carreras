@@ -95,7 +95,9 @@ h1{
 .imagen,
 .organizador,
 .telefono,
-.empresa {
+.empresa,
+.peso,
+.altura {
     font-family: "Boogaloo", sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -132,7 +134,9 @@ h1{
 #repetir,
 #localidad,
 #telefono,
-#club {
+#club,
+#peso,
+#altura {
     width: 90%;
     max-width: 500px;
     height: 30px;

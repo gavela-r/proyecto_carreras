@@ -25,24 +25,54 @@
     <main>
         <div>
             <h1 class="titulo1">MIS CARRERAS</h1>
-            <div class="carrera1">
-                <i class="fa-solid fa-location-dot" id="ubicacion"></i><h3 class="titulo">TENERIFE BLUETRAIL</h3>
-                <p class="texto">Es otra de las carreras que se celebran en las Islas Canarias, concretamente en Tenerife y con el pico más alto de toda España como testigo de cada zancada.</p>
-            </div>
-            <div class="flecha"></div>
-            <img src="./img/cambio-recorrido-bluetrail.r_d.272-174.webp" alt="aqui hay una foto" class="foto1">
-            <div class="carrera2">
-                <i class="fa-solid fa-location-dot" id="ubicacion"></i><h3 class="titulo">GRAN TRAIL PICOS DE EUROPA</h3>
-                <p class="texto">Con los senderos y prados del Parque Nacional de Los Picos de Europa (Asturias) como testigos, esta carrera se ha convertido en una parada obligatoria para muchos corredores por muchos motivos, pero sobre todo por sus paisajes.</p>
-            </div>
-            <div class="flecha"></div>
-            <img src="./img/gran-trail-picos-europa-2023-mapa.jpg" alt="aqui hay una foto" class="foto2">
-            <div class="carrera3">
-                <i class="fa-solid fa-location-dot" id="ubicacion"></i><h3 class="titulo">ULTRA TRAIL SIERRA NEVADA</h3>
-                <p class="texto">Granada y su Sierra Nevada es también otra de las paradas de peregrinación para los trail runners en lo que respecta a carreras por montaña.</p>
-            </div>
-            <div class="flecha"></div>
-            <img src="./img/ultra-sierra-nevada-2016-mapa-103km.webp" alt="aqui hay una foto" class="foto3">
+                <div id="carrerasContainer">
+                <!--<div class="carrera1">
+                        <img src="./img/cambio-recorrido-bluetrail.r_d.272-174.webp" alt="aqui hay una foto" class="foto1">
+                        <p class="nombre">Nombre:</p><p class="titulo">TENERIFE BLUETRAIL</p>
+                        <i class="fa-solid fa-calendar" id="calendario"></i><p class="fecha">Fecha de ralizacion:</p><p class="fecha1">00-00-00</p>
+                        <i class="fa-solid fa-person-running" id="run"></i><p class="km">KM:</p><p class="kilimetros">20km</p>
+                    </div>
+                    
+                    <div class="carrera2">
+                        <img src="./img/gran-trail-picos-europa-2023-mapa.jpg" alt="aqui hay una foto" class="foto2">
+                        <p class="nombre2">Nombre:</p><p class="titulo">GRAN TRAIL PICOS DE EUROPA</p>
+                        <i class="fa-solid fa-calendar" id="calendario2"></i><p class="fecha2">Fecha de ralizacion:</p><p class="numero">00-00-00</p>
+                        <i class="fa-solid fa-person-running" id="run2"></i><p class="km2">KM:</p><p class="kilimetros2">20km</p>
+                        
+                    </div>
+                
+                    <div class="carrera3">
+                        <img src="./img/ultra-sierra-nevada-2016-mapa-103km.webp" alt="aqui hay una foto" class="foto3">
+                        <p class="nombre2">Nombre:</p><p class="titulo">ULTRA TRAIL SIERRA NEVADA</p>
+                        <i class="fa-solid fa-calendar" id="calendario2"></i><p class="fecha2">Fecha de ralizacion:</p><p class="numero">00-00-00</p>
+                        <i class="fa-solid fa-person-running" id="run2"></i><p class="km2">KM:</p><p class="kilimetros2">20km</p>
+                    </div>
+
+                    <div class="carrera4">
+                        <img src="./img/trail 100 Andorra.png" alt="aqui hay una foto" class="foto4">
+                        <p class="nombre4">Nombre:</p><p class="titulo4">TRAIL 100 ANDORRA</p>
+                        <i class="fa-solid fa-calendar" id="calendario4"></i><p class="fecha4">Fecha de ralizacion:</p><p class="numero4">00-00-00</p>
+                        <i class="fa-solid fa-person-running" id="run4"></i><p class="km4">KM:</p><p class="kilimetros4">20km</p>
+                    
+                    </div>
+                    
+                    <div class="carrera5">
+                        <img src="./img/ULTRA TRAIL VALL D`ARAN.webp" alt="aqui hay una foto" class="foto2">
+                        <p class="nombre5">Nombre:</p><p class="titulo5">ULTRA TRAIL VALL D`ARAN</p>
+                        <i class="fa-solid fa-calendar" id="calendario5"></i><p class="fecha5">Fecha de ralizacion:</p><p class="numero5">00-00-00</p> 
+                        <i class="fa-solid fa-person-running" id="run5"></i><p class="km5">KM:</p><p class="kilimetros5">20km</p>
+                        
+                    </div> 
+                
+                    <div class="carrera6">
+                        <img src="./img/TRANSVULCANIA.jpg" alt="aqui hay una foto" class="foto3">
+                        <p class="nombre2">Nombre:</p><p class="titulo">TRANSVULCANIA</p>
+                        <i class="fa-solid fa-calendar" id="calendario2"></i><p class="fecha2">Fecha de ralizacion:</p><p class="numero">00-00-00</p>
+                        <i class="fa-solid fa-person-running" id="run2"></i><p class="km2">KM:</p><p class="kilimetros2">20km</p>
+                    </div>  -->
+                </div>
+            
+          
         </div>
         <aside id="izq">
             <i class="fa-solid fa-xmark" id="aside"></i>
@@ -62,7 +92,7 @@
                 <span><a href="./misCarreras.html">Mis carreras</a></span>
            </div>
            <div>
-                <span><a href=""></a>Otras carreras</span>
+                <span><a href="./buscarCarreras.html"></a>Buscar Carrera</span>
            </div>
            <div>
                 <span><a href="./añadirCarrera.html">Añadir carreras</a></span>
@@ -74,7 +104,7 @@
 
         <a href="./añadirCarrera.html"><button class="añadir">Añadir</button></a>
         <a href=""><button class="eliminar">Eliminar</button></a>
-        <a href=""><button class="otras">Otras Carreras</button></a>
+        <a href="./editarCarrera.html"><button class="otras">Editar</button></a>
     </main>
     <footer>
         <div class="informacion">

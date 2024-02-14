@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NATURE RACE</title>
+    <script src="https://kit.fontawesome.com/96fad47267.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="../img/OIG.jpeg" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Boogaloo&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Boogaloo&family=Indie+Flower&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="./CSS/buscarCarreras.css">
+</head>
+<body>
+    <header>
+        <i class="fa-solid fa-bars" id="perfil"></i>
+        <h1>NATURE RACE</h1>
+        <h3>¿PREPARADO PARA LA <br> AVENTURA?</h3>
+        <a href="./principal.html"><img src="./img/OIG.jpeg" alt="aqui hay un logo"></a>
+        <a href="./principal.html"><button class="boton">INICIO</button></a>
+    </header>
+    <main>
+        <div>
+            <select name="filtro" id="filtro">
+                <option value="nombre_carrera">Nombre</option>
+                <option value="fecha">Fecha</option>
+                <option value="distancia">Distancia</option>
+            </select>
+            <h1 class="titulo">Buscar Carreras</h1>
+            <div class="busqueda">
+                
+                <input type="text" class="buscar" placeholder="buscar carrera" id="buscar"><div class="lupa"><button id="boton"><i class="fa-solid fa-magnifying-glass"></i></button></div>
+            </div>
+            <div id="carrerasContainer">
+                
+                <!-- <div class="carrera1">
+                        <img src="./img/cambio-recorrido-bluetrail.r_d.272-174.webp" alt="aqui hay una foto" class="foto1">
+                        <p class="nombre">Nombre:</p><p class="titulo">TENERIFE BLUETRAIL</p>
+                        <i class="fa-solid fa-calendar" id="calendario"></i><p class="fecha">Fecha de ralizacion:</p><p class="fecha1">00-00-00</p>
+                        <i class="fa-solid fa-person-running" id="run"></i><p class="km">KM:</p><p class="kilimetros">20km</p>
+                    </div>
+                    
+                    <div class="carrera2">
+                        <img src="./img/gran-trail-picos-europa-2023-mapa.jpg" alt="aqui hay una foto" class="foto2">
+                        <p class="nombre2">Nombre:</p><p class="titulo">GRAN TRAIL PICOS DE EUROPA</p>
+                        <i class="fa-solid fa-calendar" id="calendario2"></i><p class="fecha2">Fecha de ralizacion:</p><p class="numero">00-00-00</p>
+                        <i class="fa-solid fa-person-running" id="run2"></i><p class="km2">KM:</p><p class="kilimetros2">20km</p>
+                        
+                    </div>
+                
+                    <div class="carrera3">
+                        <img src="./img/ultra-sierra-nevada-2016-mapa-103km.webp" alt="aqui hay una foto" class="foto3">
+                        <p class="nombre2">Nombre:</p><p class="titulo">ULTRA TRAIL SIERRA NEVADA</p>
+                        <i class="fa-solid fa-calendar" id="calendario2"></i><p class="fecha2">Fecha de ralizacion:</p><p class="numero">00-00-00</p>
+                        <i class="fa-solid fa-person-running" id="run2"></i><p class="km2">KM:</p><p class="kilimetros2">20km</p>
+                    </div>
+
+                    <div class="carrera4">
+                        <img src="./img/trail 100 Andorra.png" alt="aqui hay una foto" class="foto4">
+                        <p class="nombre4">Nombre:</p><p class="titulo4">TRAIL 100 ANDORRA</p>
+                        <i class="fa-solid fa-calendar" id="calendario4"></i><p class="fecha4">Fecha de ralizacion:</p><p class="numero4">00-00-00</p>
+                        <i class="fa-solid fa-person-running" id="run4"></i><p class="km4">KM:</p><p class="kilimetros4">20km</p>
+                    
+                    </div>
+                    
+                    <div class="carrera5">
+                        <img src="./img/ULTRA TRAIL VALL DARAN.webp" alt="aqui hay una foto" class="foto2">
+                        <p class="nombre5">Nombre:</p><p class="titulo5">ULTRA TRAIL VALL D`ARAN</p>
+                        <i class="fa-solid fa-calendar" id="calendario5"></i><p class="fecha5">Fecha de ralizacion:</p><p class="numero5">00-00-00</p> 
+                        <i class="fa-solid fa-person-running" id="run5"></i><p class="km5">KM:</p><p class="kilimetros5">20km</p>
+                        
+                    </div> 
+                
+                    <div class="carrera6">
+                        <img src="./img/TRANSVULCANIA.jpg" alt="aqui hay una foto" class="foto3">
+                        <p class="nombre2">Nombre:</p><p class="titulo">TRANSVULCANIA</p>
+                        <i class="fa-solid fa-calendar" id="calendario2"></i><p class="fecha2">Fecha de ralizacion:</p><p class="numero">00-00-00</p>
+                        <i class="fa-solid fa-person-running" id="run2"></i><p class="km2">KM:</p><p class="kilimetros2">20km</p>
+                    </div>  -->
+                </div>
+            
+          
+        <aside id="izq">
+            <i class="fa-solid fa-xmark" id="aside"></i>
+           <div id="menu">
+           <div id="menu">
+            <div id="user">
+                usuario
+            </div>
+            <div id="menu2">
+                
+            </div>
+           </div>
+           <div>
+                <span><a href="./editarPerfil.html">Editar perfil</a></span>
+           </div>
+           <div>
+                <span><a href="./misCarreras.html">Mis carreras</a></span>
+           </div>
+           <div>
+                <span><a href="./buscarCarreras.html"></a>Buscar Carreras </span>
+           </div>
+           <div>
+                <span><a href="./añadirCarrera.html">Añadir carreras</a></span>
+           </div>
+           <div id="logout">
+                <span>Cerrar sesion</span>
+           </div>
+        </aside>
+
+        
+    </main>
+    <footer>
+        <div class="informacion">
+            <p>Fundador: Adrián Gavela</p>
+            <p>Correo: adrian.gavela@gmail.com</p>
+            <p>Teléfono : 000 000 000</p>
+        </div>
+        <img src="./img/OIG.jpeg" alt="aqui hay un logo">
+        <div class="informacion2">
+            <p>Politica de privacidad</p>
+            <p>Cookies</p>
+            <p>Noticias</p>
+        </div>
+    </footer>
+</body>
+<script src="./JavaScript/filtrarCarreras.js"></script>
+</html>

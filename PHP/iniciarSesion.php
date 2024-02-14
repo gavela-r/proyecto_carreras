@@ -38,7 +38,7 @@
                         'exp' => time() + (60*60*24)
                     ];
                     $jwt = JWT::encode($payload, $key, 'HS256');
-    
+                    
                     echo json_encode(array("token" => $jwt));
                 } else {
                     echo json_encode(array("message" => "datos incorrectos"));

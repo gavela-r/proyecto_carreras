@@ -1,0 +1,251 @@
+html{
+    max-width: 2100px;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    margin: 0 auto;
+    height: 1000px;
+    background-color: hsl(26, 22%, 75%);
+    max-width: 1200;
+}
+
+header {
+    background-image: url(../img/cabecera.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 100%;
+    height: 300px;
+    
+    
+}
+header h1 {
+    font-family: "Boogaloo", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 50px;
+    margin: 0;
+    position: absolute;
+    left: 150px;
+    top: 30px;
+}
+header h3 {
+    font-family: "Indie Flower", cursive;
+    font-weight: 400;
+    font-style: normal;
+    color: #61FF00;
+    transform: rotate(-15deg);
+    position: absolute;
+    top: 70px;
+    left: 180px;
+}
+header img {
+    width: 100px;
+    filter: brightness(1.1);
+    mix-blend-mode: multiply;
+    position: relative;
+    left: 30px;
+    top: 10px;
+}
+#perfil{
+    position: absolute;
+    left: 1300px;
+    top: 20px;
+    color: white;
+    cursor: pointer;
+    
+}
+#aside{
+    color: black;
+    position: relative;
+    left: 30px;
+    cursor: pointer;
+    
+    top: 15px;
+}
+
+.enlace{
+    color: black;
+}
+
+#filtro{
+    width: 100px;
+    height: 40px;
+    background-color: white;
+    border-radius: 20px;
+    position: absolute;
+    top: 450px;
+    left: 300px;
+}
+
+.titulo{
+    font-family: "Boogaloo", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 50px;    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #6B8E23;
+    margin-top: 40px;
+}
+.buscar{
+    width: 50%;
+    max-width: 500px;
+    height: 30px;
+    border-radius: 10px;
+    background-color: white;
+    margin-top: 20px;
+    margin-left: 30%;
+}
+.lupa{
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    border-radius: 50%;
+    position: relative;
+    left: 960px;
+    top: -45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+button{
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+#carrerasContainer {
+    display: flex;
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan en múltiples líneas */
+    justify-content: space-around; /* Distribuye los elementos equitativamente en el contenedor */
+}
+.carrera1 {
+    font-family: "Kanit", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    width: 300px;
+    height: 300px;
+    background-color: #D9D9D9;
+    margin-bottom: 20px; /* Espacio entre las carreras */
+    padding: 20px;
+}
+
+p{
+    font-family: "Kanit", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+.foto1{
+    position: relative;
+    top: -20px;
+    left: -20px;
+    width: 340px;
+    height: 190px;
+}
+
+#izq {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f0f0f0; 
+    padding: 20px;
+    width: 200px;
+    height: 105vh;
+    max-width: 200px; 
+}
+
+#menu {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+#menu2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#menu2 div {
+    width: 80%;
+    height: 1px;
+    background-color: #ccc; /* Color de las líneas */
+    margin: 5px 0;
+}
+
+#user {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+span {
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+span:hover {
+    color: blue; /* Cambia el color al pasar el ratón */
+}
+
+#logout span {
+    color: red; /* Color rojo para cerrar sesión */
+}
+.mostrar{
+   display: flex !important;
+}
+
+footer{
+    background-color: #CEBEB2;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+p{
+    font-family: "Kanit", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+footer img{
+    width: 100px;
+    filter: brightness(1.1);
+    mix-blend-mode: multiply;
+}
+footer .informacion2 p:nth-of-type(2){
+    font-family: "Kanit", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    padding-left: 95px;
+
+}
+footer .informacion2 p:nth-of-type(3){
+    font-family: "Kanit", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    padding-left: 95px;
+}
+
+
+@media screen and (min-width: 1900px) and (max-width: 2000px){
+    #perfil{
+        left: 1850px;
+    }
+    #ubicacion{
+        left: 260px;
+        top: 50px;
+    }
+    .mapa{
+        margin-left: 200px;
+    }
+    .lupa{
+        left: 650px;
+    }
+}

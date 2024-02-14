@@ -111,6 +111,15 @@ a{
     width: 500px;
     margin-left: 70px;
 }
+#filtro{
+    width: 100px;
+    height: 40px;
+    background-color: white;
+    border-radius: 20px;
+    position: absolute;
+    top: 550px;
+    left: 700px;
+}
 .busqueda{
     width: 900px;
     height: 600px;

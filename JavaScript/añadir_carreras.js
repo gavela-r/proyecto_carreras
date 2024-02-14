@@ -65,7 +65,7 @@ formulario.addEventListener('submit', (event)=>{
 
     
 
-    fetch('http://222.222.222.234/PHP/anadirCarrera.php', option)
+    fetch('http://localhost:3000/PHP/anadirCarrera.php', option)
     .then(res => {
         if (!res.ok) {
             throw new Error('Hubo un problema con la solicitud.');

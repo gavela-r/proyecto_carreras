@@ -112,7 +112,7 @@ header img {
     font-style: normal;
     margin-left: 55%;
     position: relative;
-    top: -400px;
+    top: -135px;
 }
 .peso{
     font-family: "Boogaloo", sans-serif;
@@ -120,7 +120,7 @@ header img {
     font-style: normal;
     margin-left: 55%;
     position: relative;
-    top: -400px;
+    top: -120px;
 }
 .altura{
     font-family: "Boogaloo", sans-serif;
@@ -141,7 +141,7 @@ header img {
     border-radius: 40px;
     background-color: #D9D9D9;
     position: relative;
-    top: -400px;
+    top: -135px;
     margin-left: 55%;
     display: flex;
     justify-content: center;
@@ -152,7 +152,7 @@ header img {
     height: 30px;
     border-radius:40px;
     background-color: #D9D9D9;
-    margin-top: -50%;
+    margin-top: -15%;
     margin-left: 55%;
     display: flex;
     justify-content: center;
@@ -182,12 +182,27 @@ input[type="submit"]{
     font-size: 10px;
     margin: 0 30px 0 ;
     position: relative;
-    left: 350px;
+    left: 420px;
+    top: -40px;
+}
+#restablecer{
+    background-color: #61FF00;
+    height: 30px;
+    width: 13%;
+    max-width: 200px;
+    border-radius: 10px;
+    font-family: "Boogaloo", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    font-size: 10px;
+    margin: 0 30px 0 ;
+    position: relative;
+    left: 420px;
     top: -40px;
 }
 #flecha{
     position: relative;
-    top: 50px;
+    top: 100px;
     right: 290px;
     color: black;
 }

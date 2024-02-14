@@ -120,7 +120,8 @@ h1{
 .distancia,
 .nombre_carrera,
 .localidad,
-.numero{
+.numero,
+.imagen{
     font-family: "Boogaloo", sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -142,6 +143,9 @@ h1{
     margin-left: 15%;
     display: flex;
     justify-content: center;
+}
+#foto{
+    margin-left: 100px;
 }
 #enviar{
     height: 50px;

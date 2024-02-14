@@ -30,9 +30,14 @@
             <p class="texto">Vuelve a disfrutar de las aventuras y experiencias vividas, te damos la posibilidad de descubrir informacion interesante y datos sobre los resultados de tus carreras</p>
             <img src="./img/09-barcena-paguenzo-mapa.jpg" alt="aqui hay una foto" class="mapa">
         </div>
+        <select name="filtro" id="filtro">
+            <option value="nombre">Nombre</option>
+            <option value="fecha">Fecha</option>
+            <option value="distancia">Distancia</option>
+        </select>
         <div class="busqueda">
             <h1 class="titulo">¿Quieres descubrir nuevos desafios?</h1>
-            <input type="text" class="buscar" placeholder="ubicacion"><div class="lupa"><button><i class="fa-solid fa-magnifying-glass"></i></button></div>
+            <input type="text" class="buscar" placeholder="buscar carrera" id="buscar"><div class="lupa"><button id="boton"><i class="fa-solid fa-magnifying-glass"></i></button></div>
         </div>
         <aside id="izq">
             <i class="fa-solid fa-xmark" id="aside"></i>
@@ -53,7 +58,7 @@
                 <span><a href="./misCarreras.html">Mis carreras</a></span>
            </div>
            <div>
-                <span><a href=""></a>Otras carreras</span>
+                <span><a href="./buscarCarreras.html">Buscar Carrera</a</span>
            </div>
            <div>
                 <span><a href="./añadirCarrera.html">Añadir carreras</a></span>

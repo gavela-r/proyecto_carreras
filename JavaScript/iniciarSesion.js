@@ -33,7 +33,7 @@ formulario.addEventListener('submit', (event)=>{
   }
 
    
-    fetch('http://222.222.222.234/PHP/iniciarSesion.php', option)
+    fetch('http://localhost:3000/PHP/iniciarSesion.php', option)
     .then(res => {
         if(res.status == 200){
              return res.json();

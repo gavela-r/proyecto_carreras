@@ -13,12 +13,13 @@
                 $distancia = $datos['distancia'];
                 $localidad = $datos['localidad'];
                 $numero = $datos['numero'];
+                $foto = $datos['fotos'];
                
-               $sql = "INSERT INTO añadir_carrera (nombre_carrera, fecha, distancia, localidad, numero_participantes)
-                        VALUE('$nombre', '$fecha', '$distancia', '$localidad', '$numero')";
+               $sql = "INSERT INTO añadir_carreras (nombre_carrera, fecha, distancia, localidad, numero_participantes, fotos)
+                        VALUES('$nombre', '$fecha', '$distancia', '$localidad', '$numero', '$foto')";
               
                 try{
-                    $con ->query($sql);
+                    $con->query($sql);
                     header("HTTP/1.1 201 Created");
                     echo json_encode($con->insert_id);
                 
@@ -31,5 +32,6 @@
             }
             
 }
+
 
 ?>
